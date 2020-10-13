@@ -1,0 +1,9 @@
+name: Continue Jobs
+on: push
+
+jobs:
+  always-success:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+        - run: exit 1
